@@ -14,4 +14,4 @@ app.get('/search/:query', async (req, res) => {
         })   
 })
 
-app.listen(8080, () => console.log(`App is now listening for requests v0.1`));
+app.listen(8000, () => console.log(`App is now listening for requests on 8000`));
