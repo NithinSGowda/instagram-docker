@@ -4,7 +4,7 @@ WORKDIR app
 
 COPY package*.json ./
 
-EXPOSE 8080
+EXPOSE 8000
 
 # RUN apt-get update
 
