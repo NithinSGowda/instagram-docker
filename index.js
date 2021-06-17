@@ -7,8 +7,8 @@ console.log(username,password);
 const client = new Instagram({ username, password })
 
 app.get('/search/:query', async (req, res) => {
-        await client.login()
-        const profile = await client.getProfile()
+        // await client.login()
+        // const profile = await client.getProfile()
         client.getMediaFeedByHashtag({ hashtag: req.params.query}).then((data)=>{
             res.send(JSON.parse(JSON.stringify(data.edge_hashtag_to_media.edges)))
         })   
